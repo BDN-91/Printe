@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../Fonts/ClearSans-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Medium";
+    src: url(../Fonts/ClearSans-Medium.ttf);
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url(../Fonts/Cuprum.ttf);
+}
+@font-face {
+    font-family: "ProximaNova";
+    src: url(../Fonts/ProximaNova.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../Fonts/Roboto.ttf)
+}
