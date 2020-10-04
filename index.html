@@ -34,13 +34,16 @@
 
                     <div class="contacts header_contacts">
                         <a class="contacts_number" href="tel:0444314042">(044) 431-40-42</a>
-                        <button class="contacts_btn header_contacts_btn"></button>
+                        <button class="contacts_btn header_contacts_btn" type="button"></button>
                     </div><!--contacts-->
                     
                     <div class="header_basket">
                         <img class="basket" src="./Images/Icons/basket.png" alt="basket">
                         <div class="basket_number">3</div>
                     </div>
+                    <button class="burger" type="button">
+                        <span class="burger__item">Menu</span>
+                    </button>
                 </div><!--header_contact_box-->
 
                 <div class="phone_box js_header_phone_box">
@@ -76,6 +79,9 @@
                 <a class="nav_item" href="#">О нас</a>
                 <a class="nav_item" href="#">Контакты</a>
                 <a class="nav_item" href="#"><img src="./Images/Icons/search.png" alt="#"></a>
+                <button class="burger burger_modal" type="button">
+                    <span class="burger__item">Menu</span>
+                </button>
             </nav>
         </div><!--container-->
     </div><!--header_nav-->
@@ -86,13 +92,7 @@
             <div class="intro_inner">
                 <h1 class="intro_title">Оперативная печать полиграфии от 1 дня!</h1>
                 <p class="intro_subtitle">Доставка в любой город Украины</p>
-                <button class="btn">Сделать заказ</button>
-
-                <div class="callback">
-                    <img class="callback_img" src="Images/Icons/call-back.png" alt="call-back">
-                    <p class="callback_text">Перезвоните мне сейчас!</p>
-                </div><!--callback-->
-
+                <button class="btn" type="button">Сделать заказ</button>
             </div><!--intro_inner-->
 
         </div><!--container-->
@@ -100,57 +100,65 @@
 
     <section class="product">
         <div class="container">
-            <h2 class="title">Продукция</h2>
-            <div class="product_inner">
-
-                <div class="product_item">
-                    <div class="product_content"> 
-                        <h3 class="product_title">Офисная продукция</h3>
-                        <ul class="product_list">
-                            <li class="product_list_item"><a href="#">Визитки</a></li>
-                            <li class="product_list_item"><a href="#">Конверты</a></li>
-                            <li class="product_list_item"><a href="#">Папки</a></li>
-                            <li class="product_list_item"><a href="#">Книги</a></li>
-                            <li class="product_list_item"><a href="#">Блокноты</a></li>
-                            <li class="product_list_item"><a href="#">Фирменные бланки</a></li>
-                        </ul>
-                        <img class="product_img" src="./Images/Icons/blank-page.png" alt="blank-page">
-                    </div><!--product_content-->
-                </div><!--product_item-->
-
-                <div class="product_item">
-                    <div class="product_content"> 
-                        <h3 class="product_title">Рекламная продукция</h3>
-                        <ul class="product_list">
-                            <li class="product_list_item"><a href="#">Листовки</a></li>
-                            <li class="product_list_item"><a href="#">Флаера</a></li>
-                            <li class="product_list_item"><a href="#">Буклеты</a></li>
-                            <li class="product_list_item"><a href="#">Календари</a></li>
-                            <li class="product_list_item"><a href="#">Блокноты</a></li>
-                            <li class="product_list_item"><a href="#">Плакаты</a></li>
-                            <li class="product_list_item"><a href="#">Баннеры</a></li>
-                            <li class="product_list_item"><a href="#">Магниты</a></li>
-                            <li class="product_list_item"><a href="#">Наклейки</a></li>
-                        </ul>
-                        <img class="product_img" src="./Images/Icons/road-map.png" alt="road-map">
-                    </div><!--product_content-->
-                </div><!--product_item-->
-
-                <div class="product_item">
-                    <div class="product_content"> 
-                        <h3 class="product_title">Для бизнеса</h3>
-                        <ul class="product_list">
-                            <li class="product_list_item"><a href="#">Каталоги</a></li>
-                            <li class="product_list_item"><a href="#">Журналы</a></li>
-                            <li class="product_list_item"><a href="#">Дисконтные карты</a></li>
-                            <li class="product_list_item"><a href="#">Бейджи</a></li>
-                            <li class="product_list_item"><a href="#">Гарантийные наклейки</a></li>
-                        </ul>
-                        <img class="product_img" src="./Images/Icons/e-reader.png" alt="e-reader">
-                    </div><!--product_content-->
-                </div><!--product_item-->
-
-            </div><!--product_inner-->
+            <div class="wrapper">
+                <div class="callback">
+                    <img class="callback_img" src="Images/Icons/call-back.png" alt="call-back">
+                    <p class="callback_text">Перезвоните мне сейчас!</p>
+                </div><!--callback-->
+    
+                <h2 class="title">Продукция</h2>
+                <div class="product_inner">
+    
+                    <div class="product_item">
+                        <div class="product_content"> 
+                            <h3 class="product_title">Офисная продукция</h3>
+                            <ul class="product_list">
+                                <li class="product_list_item"><a href="#">Визитки</a></li>
+                                <li class="product_list_item"><a href="#">Конверты</a></li>
+                                <li class="product_list_item"><a href="#">Папки</a></li>
+                                <li class="product_list_item"><a href="#">Книги</a></li>
+                                <li class="product_list_item"><a href="#">Блокноты</a></li>
+                                <li class="product_list_item"><a href="#">Фирменные бланки</a></li>
+                            </ul>
+                            <img class="product_img" src="./Images/Icons/blank-page.png" alt="blank-page">
+                        </div><!--product_content-->
+                    </div><!--product_item-->
+    
+                    <div class="product_item">
+                        <div class="product_content"> 
+                            <h3 class="product_title">Рекламная продукция</h3>
+                            <ul class="product_list">
+                                <li class="product_list_item"><a href="#">Листовки</a></li>
+                                <li class="product_list_item"><a href="#">Флаера</a></li>
+                                <li class="product_list_item"><a href="#">Буклеты</a></li>
+                                <li class="product_list_item"><a href="#">Календари</a></li>
+                                <li class="product_list_item"><a href="#">Блокноты</a></li>
+                                <li class="product_list_item"><a href="#">Плакаты</a></li>
+                                <li class="product_list_item"><a href="#">Баннеры</a></li>
+                                <li class="product_list_item"><a href="#">Магниты</a></li>
+                                <li class="product_list_item"><a href="#">Наклейки</a></li>
+                            </ul>
+                            <img class="product_img" src="./Images/Icons/road-map.png" alt="road-map">
+                        </div><!--product_content-->
+                    </div><!--product_item-->
+    
+                    <div class="product_item">
+                        <div class="product_content"> 
+                            <h3 class="product_title">Для бизнеса</h3>
+                            <ul class="product_list">
+                                <li class="product_list_item"><a href="#">Каталоги</a></li>
+                                <li class="product_list_item"><a href="#">Журналы</a></li>
+                                <li class="product_list_item"><a href="#">Дисконтные карты</a></li>
+                                <li class="product_list_item"><a href="#">Бейджи</a></li>
+                                <li class="product_list_item"><a href="#">Гарантийные наклейки</a></li>
+                            </ul>
+                            <img class="product_img" src="./Images/Icons/e-reader.png" alt="e-reader">
+                        </div><!--product_content-->
+                    </div><!--product_item-->
+    
+                </div><!--product_inner-->
+            </div><!--wrapper-->
+            
         </div><!--container-->
     </section><!--product-->
 
@@ -198,7 +206,7 @@
 
             </div><!--news_inner-->
 
-            <button class="news_btn">Смотреть все новости</button>
+            <button class="news_btn" type="button">Смотреть все новости</button>
 
         </div><!--container-->
     </section><!--news-->
@@ -228,7 +236,7 @@
                 <div class="callback callback_footer">
                     <img class="callback_img" src="Images/Icons/call-back.png" alt="call-back">
                     <p class="callback_text">Перезвоните мне сейчас!</p>
-                </div><!--callback-->
+                </div><!--callback callback_footer-->
 
                 <div class="footer_logo_box">
                     <div class="logo">
@@ -258,7 +266,7 @@
                 <div class="footer_contact_box">
                     <div class="contacts">
                         <a class="contacts_number" href="tel:0444314042">(044) 431-40-42</a>
-                        <button class="contacts_btn footer_contacts_btn"></button>
+                        <button class="contacts_btn footer_contacts_btn" type="button"></button>
                     </div><!--contacts-->
                     <a class="contact_link" href="#">Контакты</a>
                     <div>

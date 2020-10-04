@@ -5,9 +5,27 @@ window.onload = function() {
     const btnHeader = document.querySelector('.header_contacts_btn');
     const btnFooter = document.querySelector('.footer_contacts_btn');
 
+    const btnModalMenu = document.querySelectorAll('.burger');
+    const headerModalNav = document.querySelector('.header_nav')
+
+    for (let i = 0; i < btnModalMenu.length; i++) {
+
+      btnModalMenu[i].onclick = () => {
+
+         if( i === 0 ) {
+            headerModalNav.setAttribute('style','display: block');
+         } 
+         else {
+            headerModalNav.removeAttribute('style','display: block');
+         }
+
+      };
+   };
+    
+
     for (let i = 0; i < buttons.length; i++) {
-    buttons[i].onclick = toggleClass;
-    }
+      buttons[i].addEventListener('click', toggleClass)
+    };
 
     function toggleClass() {
 
@@ -30,6 +48,6 @@ window.onload = function() {
             btnFooter.setAttribute('class', 'contacts_btn footer_contacts_btn');
          }
 
-    }
+    };
 
 }
